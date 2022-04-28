@@ -1,0 +1,404 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="robots" content="index, follow" >
+<meta content="" name="keywords">
+<meta name="description" content="">
+
+<title>Ortho - Location</title>
+<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+<link href="font/font_awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="font/font_awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<!--Main site css-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/media_query.css" rel="stylesheet" type="text/css" />
+
+<!--library js-->
+<script src="jsLibrary/jquery-1.9.1.js"></script>
+<script src="carouselSlider/jquery.min.js"></script>
+
+<!--Banner slider js-->
+<link rel='stylesheet' id='camera-css'  href='gallerySlider/camera.css' type='text/css' media='all'> 
+<script type='text/javascript' src='gallerySlider/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='gallerySlider/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='gallerySlider/camera.min.js'></script> 
+
+<script>
+  jQuery(function(){
+      jQuery('#camera_wrap_2').camera({
+          height: "599px",
+          loader: '',
+          pagination: true,
+          thumbnails: false
+      });
+  });
+</script>
+
+<!--responsive nav css & js-->
+<link href="responsive_menu/css/meanmenu.css" rel="stylesheet" type="text/css">
+<link href="responsive_menu/css/mediaQuary.css" rel="stylesheet" type="text/css">
+
+<!-- Light box Add jQuery library -->
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancy_box/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="fancy_box/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancy_box/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<!-- Add Button helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="fancy_box/jquery.fancybox-buttons.css?v=1.0.5" />
+<script type="text/javascript" src="fancy_box/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="fancy_box/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<script type="text/javascript" src="fancy_box/fancyBox.js"></script>
+
+
+<!-- carousel slider -->
+<link rel="stylesheet" href="carouselSlider/owl.carousel.min.css">
+<link rel="stylesheet" href="carouselSlider/owl.theme.default.min.css">
+<script src="carouselSlider/app.js"></script>
+<script src="carouselSlider/highlight.js"></script>
+
+<script src="carouselSlider/owl.carousel.js"></script>
+<script src="carouselSlider/owl.carousel.min.js"></script>
+
+<!--  Animation css and js -->
+<script src="animation/wow.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="animation/animate.css" type="text/css"/>
+<link rel="stylesheet" href="animation/animate.min.css" type="text/css"/>
+<script>wow = new WOW({}).init();</script>
+<script>
+$(document).ready(function(){
+	});
+</script>
+</head>
+
+<body>
+
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB25IvfZQgFtgb3EJufmUQbDNYlICweHZY&sensor=false&libraries=places"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB25IvfZQgFtgb3EJufmUQbDNYlICweHZY&callback=initMap" type="text/javascript"></script>-->
+  
+  
+    <div class="appointment" id="appointment">
+            <h3>Book Appointment</h3>
+            <p>Fill up the following form to take an appointment</p>
+            <form action="" method="get">
+                  <ul class="contForm">
+                      <li class="col_2 clear">
+                          <input type="text" value="" placeholder="Patient Name" onBlur="this.placeholder=!this.placeholder?'Patient Name ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                          <input type="text" value="" placeholder="Appointment Date" onBlur="this.placeholder=!this.placeholder?'Appointment Date ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                      </li>
+                      <li class="col_2 clear">
+                          <input type="text" value="" placeholder="Patient Age" onBlur="this.placeholder=!this.placeholder?'Patient Age ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                          <input class="lastCell" type="text" value="" placeholder="Patient Weight" onBlur="this.placeholder=!this.placeholder?'Patient Weight ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                      </li>
+                      <li class="col_2 clear">   
+                          <input type="text" value="" placeholder="Phone Number" onBlur="this.placeholder=!this.placeholder?'Phone Number ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                          <input type="text" value="" placeholder="Email-id" onBlur="this.placeholder=!this.placeholder?'Email-id ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                      </li>
+                      
+                      <li>   
+                          <textarea value="" placeholder="Patient Address..." onBlur="this.placeholder=!this.placeholder?'Patient Address... ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here"></textarea>
+                      </li>
+                      <li>   
+                          <textarea value="" placeholder="Comment..." onBlur="this.placeholder=!this.placeholder?'Comment... ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here"></textarea>
+                      </li>
+                      <li>
+                          <input value="Book Appointment" type="submit" />
+                      </li>    
+                  </ul> 
+              </form>                   
+        </div>
+    <!----pop upbox -->      
+    
+    <header>
+        <div class="headTop">
+        	<div class="wrapper">
+                <div class="topRight">
+                    <span class="topcall"><a href="tel:7038480807 "><i class="fa fa-phone" aria-hidden="true"></i><p>Call Our Customer Service at:  703-848-0807</p></a></span>
+                    <span class="topmail"><a href="mailto:info@stregatechnologies.com"><i class="fa fa-envelope" aria-hidden="true"></i><p>info@orthonowva.com</p></a></span>
+                </div>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://plus.google.com/" target="_blank" class="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>    
+        </div><!--headTop end-->
+        
+        <div class="menuBar clear">
+              <div class="wrapper"> 
+                 <div class="logo"><a href="index.html"><img src="images/orthonow_logo.png" alt="Ortho Now" /></a></div>
+                 <div id="header">
+                    <div class="navMenu">
+                         <ul>
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="about.html">About Us</a></li>        
+                             <li><a href="services.html">Services</a></li>        
+                             <li class="current-menu-item"><a href="location.html">Locations</a></li> 
+                             <li><a class="fancybox" href="#appointment">Book Appointment</a></li>
+                          </ul>
+                    </div>
+                      
+                    <div class="mean-container">
+                        <div id="navi">
+                           <nav>
+                               <ul>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About Us</a></li>        
+                                 <li><a href="services.html">Services</a></li>        
+                                 <li class="current-menu-item"><a href="location.html">Locations</a></li> 
+                                 <li><a class="fancybox" href="#appointment">Book Appointment</a></li>
+                              </ul>
+                                      
+                            </nav>
+                         </div>
+                    </div>
+                  </div> <!--#header nav end-->
+              </div>
+        </div>  <!--menuBar end-->  
+        
+        <!--Banner start here-->
+        <div class="banner innerPgBn">
+            <img src="images/location_banner.jpg" alt="" />
+            <div class="captionBox">
+               <div class="wrapper">
+                  <div class="caption">
+                      <h1>Locations</h1>
+                   </div>
+               </div>
+            </div>
+        </div><!--end banner-->
+    </header>
+           
+    <div class="content innerPg locationPg">
+       <div class="innerPg_sec">
+            <div class="wrapper">
+                <h3>Locations</h3>
+                <div class="locationBox clear">
+                    <div class="locationMap"><div id="map"></div></div>
+                    
+                    <ul class="officeLocList">
+                         <li>
+                         	<div class="officeLoc">
+                                <h4>Croydon Office</h4>
+                                <h5>Elsie St, Burwood NSW 2134, Australia</h5>
+                                <h6><a href="tel:61258425987"><i class="fa fa-phone" aria-hidden="true"></i>+61 2584 25987</a></h6>
+                            </div>
+                            <img src="images/officeLocation1.jpg" alt="" />
+                         </li>
+                         <li>
+                         	<div class="officeLoc">
+                                <h4>Barcom Office</h4>
+                                <h5>Elsie St, Barcom NSW 2134, Australia</h5>
+                                <h6><a href="tel:61258425987"><i class="fa fa-phone" aria-hidden="true"></i>+61 2584 25987</a></h6>
+                            </div>
+                            <img src="images/officeLocation2.jpg" alt="" />
+                         </li>
+                         <li>
+                         	<div class="officeLoc">
+                                <h4>Rosella Office</h4>
+                                <h5>Elsie St, Burwood NSW 2134, Australia</h5>
+                                <h6><a href="tel:61258425987"><i class="fa fa-phone" aria-hidden="true"></i>+61 2584 25987</a></h6>
+                            </div>
+                            <img src="images/officeLocation3.jpg" alt="" />
+                         </li>
+                    </ul> <!--officeLocList end--> 
+                    
+                    
+                    
+                     <script type="text/javascript">
+							var map;
+							  function initMap() {
+								map = new google.maps.Map(document.getElementById('map'), {
+								  zoom: 16,
+								  center: new google.maps.LatLng(-33.91722, 151.23064),
+								  mapTypeId: 'roadmap'
+								});
+								
+
+						
+								var iconBase = 'images/';
+								var icons = {
+								  parking: {
+									icon: iconBase + 'mapPointer.png'
+								  },
+								  library: {
+									icon: iconBase + 'mapPointer.png'
+								  },
+								  info: {
+									icon: iconBase + 'mapPointer.png'
+								  }
+								};
+						
+						
+							 var contentString = [
+							  { office: 'Croydon Office'}, { office: 'Barcom Office'},{ office: 'Rosella Office'}
+							  ]
+							  ;
+									  
+								function addMarker(feature, offices) {
+								  
+									 
+	
+										var infowindow = new google.maps.InfoWindow({
+										content: offices.office
+									  });
+	  
+									   var marker = new google.maps.Marker({
+										position: feature.position,
+										icon: icons[feature.type].icon,
+										map: map,
+									  });
+									  
+									   marker.addListener('mouseover', function() {
+										infowindow.open(map, marker);
+									  });
+									  marker.addListener('mouseout', function() {
+										infowindow.close(map, marker);
+									  });
+								}
+						
+								var features = [
+								  {
+									position: new google.maps.LatLng(-33.91682, 151.23149),
+									type: 'info'
+								  }, {
+									position: new google.maps.LatLng(-33.91790, 151.23463),
+									type: 'info'
+								  }, {
+									position: new google.maps.LatLng(-33.91666, 151.23468),
+									type: 'info'
+								  }
+								];
+						
+								for (var i = 0; feature = features[i], offices = contentString[i]; i++) {
+								  addMarker(feature, offices);
+								}
+								
+								
+							  }
+
+				      </script>  
+                      
+                      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB25IvfZQgFtgb3EJufmUQbDNYlICweHZY&callback=initMap"></script>
+
+                </div><!--locationBox end-->
+             </div>
+       </div><!--innerPg_sec end--> 
+    </div><!--Content end-->
+     
+    <!--Footer start-->   
+    <footer>
+       <div class="ft_link_box">
+		   <div class="wrapper">
+                <ul>
+                	<li class="logoBox wow fadeInUp" data-wow-delay="0.1s">
+                    	<div class="ft_logo"><a href="index.html"><img src="images/orthonow_ftLogo.png" alt="Orthonow" /></a></div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="images/facebook.png" alt="Facebook" /></a></li>
+                            <li><a href="https://plus.google.com/" target="_blank" class="googleplus"><img src="images/google.png" alt="Google Plus" /></i></a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank" class="linkedin"><img src="images/linkedin.png" alt="Linkedin" /></i></a></li>
+                            <li><a href="https://www.whatsapp.com/" target="_blank" class="twitter"><img src="images/whatsapp.png" alt="Whatsapp" /></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank" class="twitter"><img src="images/twitter.png" alt="Twitter" /></a></li>
+                        </ul>
+                    </li>
+                    <li class="ftAboutBox wow fadeInUp" data-wow-delay="0.3s">
+                        <h4>About us</h4>
+                        <p>Ortho  Now  is  a  leading  providers  of  treatment  for  work-related  injuries. The  practice  is listed on all major Workers' Compensation insurances and works hand-in-hand with the patient.....</p>
+                        <a href="about.html">Read More</a>
+                    </li>
+                    <li class="quickLinksBox wow fadeInUp" data-wow-delay="0.6s">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="whyus.html">Why Us!</a></li>
+                            <li class="current-menu-item"><a href="location.html">Locations</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>    
+                    </li>    
+                    <li class="cntBox wow fadeInUp" data-wow-delay="0.9s">
+                        <h4>Contact Us</h4>
+                        <div class="ft_cnt">
+                            <span class="loc"><i class="fa fa-map-marker" aria-hidden="true"></i><p>CC-102, Lorem Ipsum,</br>Jawahar Nagar , Ipsum, </br>Lorem Ipsum, Lorem - 302004</p></span>
+                            <span class="phone"><a href="tel:7038480807"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>703-848-0807</a></span>
+                            <span class="mail"><a href="mailto:info@orthonowva.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@orthonowva.com</a></span>
+                        </div>
+                    </li> 
+                    
+                </ul>       
+		   </div>
+	   </div><!--ft_link_box end-->
+       
+       <div class="ftBar">
+       	   <div class="wrapper">
+               <span class="copyright"><p>Copyright 2017. All Right Reserved</p></span>
+           </div>
+       </div>
+    </footer>
+
+<script type="text/javascript" src="responsive_menu/js/jquery.meanmenu.js"></script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('.mean-container nav').meanmenu();
+});
+</script>	
+
+	
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+      
+		  $('#carousel1').owlCarousel({
+			loop:true,
+			margin:10,
+			responsiveClass:true,
+			responsiveRefreshRate: 10,
+			nav:true,
+			//center: true,
+			responsive:{
+				1:{items:1,},
+				321:{items:1,},
+				481:{items:2,},
+				641:{items:3,},
+				769:{items:4,},
+				960:{items:4,},
+				1120:{items:4,},
+				1366:{items:4,},
+				1440:{items:4,},
+				1600:{items:4,},
+				2048:{items:4, }
+			}
+			})
+  
+  			
+  
+		  owl.on('mousewheel', '.owl-carousel', function (e) {
+			if (e.deltaY>0) {
+				owl.trigger('next.owl');
+			} else {
+				owl.trigger('prev.owl');
+			}
+			e.preventDefault();
+			});
+
+
+	});
+</script>
+
+
+</body>
+</html>
